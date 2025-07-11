@@ -1,15 +1,32 @@
 os: linux
 dist: focal
-vm: #existing key
-  create:
-    name: my_custom_name #custom identifier string, human readable
-before_install:
-  sudo apt-get -y install libxml2-dev
-addons:
-  apt:
-    update: true
 
-os: linux
-dist: focal
-script:
-  echo "OK"
+jobs:
+  include:
+    - name: "job one"
+      vm: 
+        size: [large]
+        create:
+          name: one_50
+      script: 
+        - echo "condition with job one"
+        - echo $TRAVIS_COMMIT_MESSAGE
+        - sleep 50
+    - name: "job two"
+      vm: 
+        size: [large]
+        create:
+          name: two_60
+      script: 
+        - echo "condition with job two"
+        - echo $TRAVIS_COMMIT_MESSAGE
+        - sleep 60
+    - name: "job three"
+      vm: 
+        size: [large]
+        create:
+          name: three_70
+      script: 
+        - echo "condition with job three"
+        - echo $TRAVIS_COMMIT_MESSAGE
+        - sleep 70
