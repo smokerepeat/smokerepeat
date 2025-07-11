@@ -1,83 +1,14 @@
 os: linux
-dist: focal
 language: generic
-vm:
-  size: [large]
-  create:
-    name: large_timeout_11jul08
-before_install:
-  - sudo apt-get -y install libxml2-dev
-addons:
-  apt:
-    update: true
-script:
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - sleep 600
-  - echo "OK"
-  - echo "sleep 100"
-  - echo "sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "OK"
-  - echo "sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100sleep 100"
-  - echo ${1439479846+4856786023985-25348}
-  - echo "sleep 200"
-  - echo "sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200sleep 200"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "OK"
-  - echo "sleep 300"
-  - echo "sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300sleep 300"
-  - echo ${1439479846+4856786023985-25348*45396876-4867}
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "OK"
-  - echo "slep 400"
-  - echo "slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400slep 400"
-  - echo ${1439479846+4856786023985-25348*45396876-4867}
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "OK"
-  - sleep 100
-  - echo "sleep 500"
-  - echo "sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500sleep 500"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "OK"
-  - echo ${1439479846+4856786023985-25348*45396876-4867}
-  - echo "sleep 600"
-  - echo "sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600sleep 600"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "OK"
-  - sleep 100
-  - echo "sleep 700"
-  - echo "sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700sleep 700"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo ${1439479846+4856786023985-25348*45396876-4867}
-  - echo "OK"
-  - echo "sleep 800"
-  - echo "sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800sleep 800"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "OK"
-  - sleep 100
-  - echo "sleep 900"
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo "sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900sleep 900"
-  - echo "OK"
-  - sleep 100
-  - echo "sleep 1000"
-  - echo "sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000sleep 1000"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo "OK"
-  - echo "sleep 1100"
-  - echo "sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100sleep 1100"
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo ${1439479846+4856786023985-25348*45396876-4867}
-  - sleep 100
-  - echo "OK"
-  - echo "sleep 1200"
-  - echo "sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200sleep 1200"
-  - echo "build with 1200 sec sleep finished"
+dist: focal
+env:
+jobs:
+  include:
+    - stage: "Tests"
+      name: "Create custom image 1 (conflict)"
+      dist: focal
+      vm:
+        create:
+          name: job_conflict_11smok_08
+      script:
+        - echo "Running s390x Job 1"
