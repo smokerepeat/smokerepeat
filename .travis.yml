@@ -8,9 +8,8 @@ jobs:
       name: "Create custom image 1 (conflict)"
       dist: focal
       vm:
-        use: smok_003_11julyy
-        create:
-          name: smok_003_11julyy_012
+        use: 
+            name: smok_003_11julyy
       before_install: sudo apt-get -y install libxml2-dev
       addons:
         apt:
