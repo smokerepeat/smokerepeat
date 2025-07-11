@@ -10,6 +10,6 @@ jobs:
       vm:
         use:
           name: my_custom_name
-        size: large
-            script:
-              - echo "Running s390x Job 1"
+      size: large
+      script:
+        - echo "Running s390x Job 1"
