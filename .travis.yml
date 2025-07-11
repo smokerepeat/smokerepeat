@@ -1,14 +1,15 @@
 os: linux
 language: generic
 dist: focal
-env:
 jobs:
   include:
-    - stage: "Tests"
-      name: "Create custom image 1 (conflict)"
-      dist: focal
+    - stage: create image
+      name: "Job 1 – Create image"
       vm:
         create:
-          name: job_conflict_11smok_08
-      script:
-        - echo "Running s390x Job 1"
+          name: conflict-test-image
+    - stage: create image
+      name: "Job 2 – Create image"
+      vm:
+        create:
+          name: conflict-test-image
