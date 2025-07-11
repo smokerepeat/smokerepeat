@@ -8,7 +8,6 @@ jobs:
       name: "Create custom image 1 (conflict)"
       dist: focal
       vm:
-        use:
-          name: job_conflict_11smok_08
+        use: job_conflict_11smok_08
       script:
         - echo "Running s390x Job 1"
