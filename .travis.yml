@@ -1,6 +1,6 @@
 os: linux
 dist: focal
-vm: #existing key
+vm: #existping key
   create:
     name: smok_001
 before_install:
