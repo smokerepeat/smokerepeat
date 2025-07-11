@@ -28,7 +28,7 @@ jobs:
       name: "Create unique custom image"
       vm:
         create:
-          name: job_unique_11smoke03
+          name: job_unique_11smoke04
       script:
         - echo "Running Unique Image Job"
         - sleep $JOB_DELAY
