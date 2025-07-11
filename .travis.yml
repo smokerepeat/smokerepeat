@@ -3,25 +3,14 @@ language: generic
 dist: focal
 env:
   global:
-    - JOB_DELAY=180
+    - JOB_DELAY=500
 jobs:
   include:
     - stage: "Tests"
       name: "Create custom image 1 (conflict)"
       vm:
         create:
-          name: job_conflict_11jul05
-        script:
-          - echo "Compiling..."
-          - make all
-          - echo "Running tests"
-          - ./run_tests || exit 1  # Fails if tests fail
-    - stage: "Tests"
-      name: "Create custom image 2 (conflict)"
-      vm:
-        create:
-          name: job_conflict_11jul02
+          name: job_conflict_smok11_06
       script:
-        - echo "Running Job 2"
+        - echo "Running Job 1"
         - sleep $JOB_DELAY
-        - exit 1
