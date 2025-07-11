@@ -2,7 +2,7 @@ os: linux
 dist: focal
 vm: #existing key
   create:
-    name: smok_01
+    name: smok_001
 before_install:
   sudo apt-get -y install libxml2-dev
 addons:
