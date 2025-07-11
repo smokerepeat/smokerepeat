@@ -1,10 +1,15 @@
 os: linux
 dist: focal
-vm: #existping key
+vm: #existing key
   create:
-    name: smok_001
+    name: my_custom_name #custom identifier string, human readable
 before_install:
   sudo apt-get -y install libxml2-dev
 addons:
   apt:
     update: true
+
+os: linux
+dist: focal
+script:
+  echo "OK"
