@@ -1,11 +1,32 @@
-os: #unsupported
+os: linux
+language: generic
 dist: focal
-vm: #existing key
-create:
-  name: smok_04 #custom identifier string, human readable
-
-before_install: sudo apt-get -y install libxml2-dev
-
-addons:
-  apt:
-    update: true
+env:
+  global:
+    - JOB_DELAY=180
+jobs:
+  include:
+    - stage: "Tests"
+      name: "Create custom image 1 (conflict)"
+      vm:
+        create:
+          name: job_conflict_11smok01
+      script:
+        - echo "Running Job 1"
+        - sleep $JOB_DELAY
+    - stage: "Tests"
+      name: "Create custom image 2 (conflict)"
+      vm:
+        create:
+          name: job_conflict_11smok02
+      script:
+        - echo "Running Job 2"
+        - sleep $JOB_DELAY
+    - stage: "Tests"
+      name: "Create unique custom image"
+      vm:
+        create:
+          name: job_unique_11smoke03
+      script:
+        - echo "Running Unique Image Job"
+        - sleep $JOB_DELAY
