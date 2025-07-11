@@ -22,7 +22,7 @@ vm:
 install: skip
 jobs:
   include:
-    - name: "condition with regex"
+    - name: "condition wkkith regex"
       script: echo "condition with regex"
       if: env(BAR) =~ /^(?i)(bar|1).*/
     - name: "condition-without-regex"
