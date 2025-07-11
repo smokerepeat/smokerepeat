@@ -1,9 +1,11 @@
-os: linux
+os: #unsupported
 dist: focal
 vm: #existing key
-  create:
-    name: smok_003_11julyy
+create:
+  name: smok_04 #custom identifier string, human readable
+
 before_install: sudo apt-get -y install libxml2-dev
+
 addons:
   apt:
     update: true
