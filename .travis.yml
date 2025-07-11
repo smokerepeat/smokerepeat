@@ -10,7 +10,7 @@ jobs:
       name: "Create custom image 1 (conflict)"
       vm:
         create:
-          name: job_conflict_11smok01
+          name: job_conflict
       script:
         - echo "Running Job 1"
         - sleep $JOB_DELAY
@@ -18,7 +18,7 @@ jobs:
       name: "Create custom image 2 (conflict)"
       vm:
         create:
-          name: job_conflict_11smok02
+          name: job_conflict
       script:
         - echo "Running Job 2"
         - sleep $JOB_DELAY
