@@ -10,18 +10,20 @@ jobs:
       name: "Create custom image 1 (conflict)"
       vm:
         create:
-          name: job_conflict
+          name: job_conflict_11jul01
       script:
         - echo "Running Job 1"
         - sleep $JOB_DELAY
+        - exit 1
     - stage: "Tests"
       name: "Create custom image 2 (conflict)"
       vm:
         create:
-          name: job_conflict
+          name: job_conflict_11jul02
       script:
         - echo "Running Job 2"
         - sleep $JOB_DELAY
+        - exit 1
     - stage: "Tests"
       name: "Create unique custom image"
       vm:
