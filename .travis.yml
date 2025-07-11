@@ -2,18 +2,10 @@ os: linux
 language: generic
 dist: focal
 env:
-jobs:
-  include:
-    - stage: "Tests"
-      name: "Create custom image 1 (conflict)"
-      dist: focal
-      vm:
-        use: 
-            name: smok_003_11julyy
-      before_install: sudo apt-get -y install libxml2-dev
-      addons:
-        apt:
-          update: true
-      size: large
-      script:
-        - echo "Running s390x Job 1"
+  - INDEX=1
+vm:
+  use:
+    name: smok_003_11julyy_012
+script:
+  - echo $env
+  - sleep 7
