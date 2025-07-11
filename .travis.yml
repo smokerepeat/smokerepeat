@@ -3,9 +3,16 @@ language: generic
 dist: focal
 env:
   - INDEX=1
-vm:
-  use:
-    name: smok_003_11julyy_012xfdfsdfsd
+jobs:
+  include:
+    - stage: use custom image1
+      vm:
+        use:
+          name: smok_003_11julyy_012
+    - stage: use custom image2
+      vm:
+        use:
+          name: job_conflict_11smok_08
 script:
   - echo $env
   - sleep 7
