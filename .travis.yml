@@ -9,8 +9,8 @@ jobs:
       dist: focal
       vm:
         use: smok_003_11julyy
-      create:
-        name: smok_003_11julyy_011
+        create:
+          name: smok_003_11julyy_012
       before_install: sudo apt-get -y install libxml2-dev
       addons:
         apt:
