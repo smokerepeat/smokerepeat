@@ -5,14 +5,20 @@ env:
   - INDEX=1
 jobs:
   include:
-    - stage: use custom image1
+    - stage: create image
+      os: linux
+      dist: focal
+      language: generic
       vm:
-        use:
-          name: smok_003_11julyy_012
-    - stage: use custom image2
+        create:
+          name: new-image_11tr
+      before_install:
+        - sudo apt-get -y install libxml2-dev
+      addons:
+        apt:
+          update: true
+    - stage: use custom image
       vm:
-        use:
-          name: job_conflict_11smok_08
-script:
-  - echo $env
-  - sleep 7
+        use: new-image_11tr
+      script:
+        - echo "Running job with custom image"
