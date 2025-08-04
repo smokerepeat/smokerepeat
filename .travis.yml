@@ -11,7 +11,7 @@ jobs:
       language: generic
       vm:
         create:
-          name: one_50
+          name: 4sep_001_to_delete
       before_install:
         - sudo apt-get -y install libxml2-dev
       addons:
