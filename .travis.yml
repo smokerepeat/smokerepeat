@@ -11,7 +11,7 @@ jobs:
       language: generic
       vm:
         create:
-          name: new-image_11tr
+          name: one_50
       before_install:
         - sudo apt-get -y install libxml2-dev
       addons:
